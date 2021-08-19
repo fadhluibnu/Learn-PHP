@@ -1,0 +1,9 @@
+ada dua jenis function
+1. build in function
+2. user-defined function
+
+function date/time
+1. time
+2. date()
+3. mktime()
+4. strtotime()

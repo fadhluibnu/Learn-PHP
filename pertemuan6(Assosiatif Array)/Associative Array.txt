@@ -1,0 +1,4 @@
+membuat arrau dengan index yang tentukan sendiri
+array assosiatif
+definisi sama seperti array numerik, kecuali
+key-nya adalah string yang kita buat sendiri

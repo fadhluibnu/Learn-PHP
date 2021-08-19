@@ -1,0 +1,11 @@
+pengulangan
+ketika kita ingin melakukan pengulangan blok program tanpa menuliskan kodenya lagi
+
+1. For
+2. While
+3. do.. While
+
+pengkondisian
+1. if.. else
+2. if.. else if.. else
+3. ternary (ternary adalah sebuah operator untuk menggantikan if dan else)

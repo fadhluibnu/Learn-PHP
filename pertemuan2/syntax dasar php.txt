@@ -1,0 +1,135 @@
+Syntax php
+
+untuk membuat komentar di php kita tinggal menambahkan // atau /* */ di awal penulisan syntax. untuk shortcut nya yaitu ctl + /. Terus shortcut untuk menghapus gimana?? untuk menghapus tinggal kalian block dan tekan lagi ctrl+/
+contoh :
+//ini komentar
+
+MENAMPILKAN OUTPUT
+standar OUTPUT adalah suatu perintah php untuk MENAMPILKAN sesuatu di LAYAR/ mencetak sesuatu di layar. kita bisa menggunakan echo atau print, print_r, var_dump. mmm kenapa ada banyak ya??jadi setiap perintah itu memiliki kegunaan sendiri yaitu:
+        1. Echo atau print
+        biasa digunakan untuk mencetak tulisan, variabel dll
+        2. print_r
+        khusus digunakan untuk mencetak isi array dan juga untuk melakukan dubuging
+        3. var_dump
+        digunakan untuk melihat isi dari sebuah variabel, jadi nanti akan muncul sebuah informasi dari sebuah variabel, dan juga untuk melakukan sebuah debuging, jadi untuk print_r dan var_dump tidak digunakan untuk website kalian, tapi ini hanya digunakan untuk debuging saja
+
+menggunakan Echo dan print
+silakahkan ketikkan syntax seperti di bawah:
+<?php
+    echo "menggunakan echo";
+    print "menggunakan print";
+    echo 12345;
+    print 6789;
+?>
+
+maka jika kita jalankan akan muncul tulisan menggunakan echo,menggunakan print,12345,6789. Mmm itu kenapa ada yang pake kutip dan ngak pake??Oke jadi begini, jika ingin menampilkan sebuah string kita bisa menggunakan kutip dua ( "..." ) atau kutip satu ( '...' ) tapi harus di ingat ya jika kalian menggunakan kutip satu maka harus di akhiri dengan kutip satu juga, jangan yang depan kutip dua yang belakang kutip satu, 
+contoh yang salah:
+echo "contoh salah';
+Tapu jika ingin menampilkan sebuah integer kita tidak udah menggunakan kutip satu ataupun dua 
+contoh :
+echo 12345;
+
+penulisan syntax Php
+
+
+Ingat sebelum kalian menggunakan php, jangan lupa nyalakan/start Apache di xampp. untuk mengecek apakah apache sudah berjalan kita tinggal ketikkan localhost di broswer.
+
+sekarang kita akan membahas mengenai penulisan syintax php yaitu salah satunya menggabungkan php dan html. gimana tuhh?? oke saya akan jelaskan :
+1. Syntax php di dalam html
+penggunaan php di html adalah suatu cara yang banyak digunakan pada saat membuat program di php. 
+    contoh penggunaan :
+    <!-- 1. Php di dalam Html-->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Belajar php</title>
+    </head>
+    <body>
+        <h1>Belajar PHP di <?php echo "shinaukode.online"; ?> </h1>
+    </body>
+    </html>
+    maka dilayar akan tampil seperti berikut
+    Belajar PHP di shinaukode.online
+pada contoh diatas menunjukan kalau ada tag/syntax php di dalam h1. Nah itu lah yang dinamakan syntax PHP di dalam HTML. Lebih kerenya lagi di syntax PHP nanti bisa menampilkan apa pun selain string lhoo.
+
+2. Syntax html di dalam Php
+untuk html di dalam php itu kebalikan dari yang di atas. tetapi cara ini tidak disarankan dalam pembuatan program php
+    contoh penggunaan:
+    <!-- 1. html di dalam php-->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Belajar php</title>
+    </head>
+    <body>
+        <?php
+            echo "<h1>Belajar PHP di shinaukode.online</h1>"
+        ?>
+    </body>
+    </html>
+kode program di atas menunjukan kalau tag html ada di dalam php.
+
+
+variabel dan tipe data
+
+Variabel
+
+Syarat - Syarat pembuatan variabel:
+1. Tidak Diawali Dengan Angka
+Saat kita akan membuat sebuah variabel kita tidak di perbolehkan menggunakan angka di awal nama sebuah variabel
+contoh :
+
+    //ini tidak boleh
+    $1website = "shinaukode.online";
+
+    //ini boleh
+    $website1 = "shinaukode.online";
+2. Tidak ada spasi
+mungkin ada kalanya kita saat membuat sebuha variabel membutuhkan sebuah spasi. tapi untuk variabel spasi itu tidak dibolehkan. terus gimana dong?? kita bisa mengganti spasi dengan underscore (_)
+contoh penggunaan:
+$website_1 = "shinaukode.online";
+
+untuk membuat variabel kita cukup menulisakan dolar ($) di awal nama variabel:
+contoh:
+    <?php
+    //variabel
+    $website = "shinaukode.online";
+    ?>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Belajar PHP</title>
+    </head>
+    <body>
+        <h1>Belajar PHP di <?php echo $website; ?> </h1>
+    </body>
+    </html>
+
+operator aritmatika
+operator aritmatika pada php yaitu tambah (+), kurang (-), kali (*), Bagi (/), modulus (%).
+
+contoh penggunaan:
+$x = 10;
+$y = 5;
+echo $x * $y;
+
+maka akan tampil di layar yaitu :
+50
+
+operator Concatenation/ penggabung string
+untuk bahasa php operator penggabung string cukup berbeda yaitu dengan menggunakan titik (.).
+    contoh penggunaan:
+    <?php
+    $nama_website = "shinaukode";
+    $nama_ekstensi_website = ".online";
+    echo $nama_website . $nama_ekstensi_website;
+    ?>

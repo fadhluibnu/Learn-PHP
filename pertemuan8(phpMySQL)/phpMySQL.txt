@@ -1,0 +1,26 @@
+DBMS
+-Oracle
+-MySQL
+-PostgreSQL
+-MongoDB
+
+Tipe DBMS
+-Relation 
+-Hierarchical DBMS
+-Network DBMS
+-NoSQL DBMS
+
+Primary Key
+adalah sebuah data yang dapat merepresantikan suatu baris record secara unik
+
+mereancang database
+database: phpdasar
+tabel: mahasiswa
+
+id int primary key auto_increment,
+nama varchar(100),
+nrp varchar(10),
+email varchar(100),
+jurusan varchar(100),
+gambar varchar(100);
+
